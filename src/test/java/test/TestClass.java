@@ -14,13 +14,13 @@ public class TestClass extends Methods{
     public static int randomNumber;
 
     public static void login() {
+        String ggUrl = driver.getCurrentUrl();
+        Assert.assertEquals(ggUrl,"https://www.gittigidiyor.comm/","URL aynı Değil!!");
         Methods.elementHover(LOGIN_BUTTON_HOVER);
         Methods.elementToBeClickable(LOGIN_BUTTON);
         Methods.waitVisibilitySendKey(USER_NAME_AREA, USER_ID);
         Methods.waitVisibilitySendKey(PASS_AREA, USER_PASS);
         Methods.waitClicableSubmit(SUBMINT_BUTTON);
-        String ggUrl = driver.getCurrentUrl();
-        Assert.assertEquals(ggUrl,"https://www.gittigidiyor.comm/","URL aynı Değil!!");
         logger.info("✓ Login işlemi başarılı!");
 
     }

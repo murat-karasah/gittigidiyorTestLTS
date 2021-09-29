@@ -11,7 +11,7 @@ public class ConsValue {
     public static final By USER_NAME_AREA = By.id("L-UserNameField");
     public static final String USER_ID = "plaguefilms@gmail.com";
     public static final By PASS_AREA = By.id("L-PasswordField");
-    public static final String USER_PASS = "test123";
+    public static final String USER_PASS = "**********";
     public static final By SUBMINT_BUTTON = By.xpath("//input[@id='gg-login-enter']");
     public static final By SEARCH_AREA = By.cssSelector("input[name='k']");
     public static final String SEARCH_WORD = "Bilgisayar";
